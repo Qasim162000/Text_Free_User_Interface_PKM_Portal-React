@@ -20,7 +20,6 @@ export default function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-
           <div
             className="collapse navbar-collapse flex-row-reverse"
             id="navbarNavDropdown"
@@ -44,17 +43,72 @@ export default function Navbar() {
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#/">
-                      Action
+                      Character Certificate
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#/">
-                      Another action
+                      General Police Verification
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#/">
-                      Something else here
+                      Learner Driving License
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#/">
+                      Driving License Renewal
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#/">
+                      International Driving License
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#/">
+                      Duplicate Driving License
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#/">
+                      Endorsement of a License
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#/">
+                      Employee Registration
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#/">
+                      Tenants Registration
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#/">
+                      Vehicle Verification
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#/">
+                      Loss Report
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#/">
+                      Crime Report
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#/">
+                      Women Violence Report
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#/">
+                      Copy of FIR
                     </a>
                   </li>
                 </ul>
@@ -79,6 +133,12 @@ export default function Navbar() {
                   Track
                 </a>
               </li>
+              <button type="button" className="btn btn-light mx-1">
+                Sign In
+              </button>
+              <button type="button" class="btn btn-outline-danger mx-1">
+                اردو
+              </button>
             </ul>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import changeimg from "./logo.png";
+import "../../styles/Navbar.css";
 
 export default function Footer() {
   return (
