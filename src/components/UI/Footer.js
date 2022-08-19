@@ -101,7 +101,7 @@ export default function Footer() {
 
         <div
           className="text-center p-3"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+          style={{ backgroundColor: "rgb(33 37 41)" }}
         >
           © 2020 Copyright: PUNJAB POLICE, PAKISTAN - ALL RIGHTS RESERVED.
         </div>
