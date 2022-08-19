@@ -1,10 +1,14 @@
 import React from "react";
 import logo from "./logo.png";
+import "../../styles/Navbar.css";
 
 export default function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav
+        className="navbar navbar-expand-lg navbar-dark"
+        style={{ backgroundColor: "#172b4d" }}
+      >
         <div className="container">
           <a className="navbar-brand" href="#/">
             <img src={logo} alt="logo" />
@@ -133,10 +137,13 @@ export default function Navbar() {
                   Track
                 </a>
               </li>
-              <button type="button" className="btn btn-light mx-1">
+              <button type="button" className="btn btn-light mx-1 my-1">
                 Sign In
               </button>
-              <button type="button" class="btn btn-outline-danger mx-1">
+              <button
+                type="button"
+                className="btn btn-outline-danger mx-1 my-1"
+              >
                 اردو
               </button>
             </ul>
