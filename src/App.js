@@ -18,13 +18,7 @@ function App() {
     <div className="App">
       <Router>       
       <Navbar />
-<<<<<<< HEAD
-      <Switch>
-        <Route path = "/" component={<Home />} />
-        {/* <Route path = "/Services" component= {<Servicee />} /> */}
-      </Switch>
-=======
-        <Route path = "/" exact element={<Home />} />
+      <Route path = "/" exact element={<Home />} />
         <Route path = "Services" exact element={<Services />} />
         <Route path = "Centers" exact element={<Centers />} />
         <Route path = "Global" exact element={<Global />} />
@@ -32,8 +26,6 @@ function App() {
         <Route path = "SignOut" exact element = {<SignOut/>} />
         <Route path = "Track" exact element = {<Track/>} />
         <Route path = "Verify" exact element = {<Verify/>} />
-
->>>>>>> 4d7a187b883d1b2199a8fcbf2190294c5a8c7d37
       <Footer />
       </Router>
     </div>
