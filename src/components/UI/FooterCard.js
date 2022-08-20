@@ -5,24 +5,24 @@ import changeimg from "./logo.png";
 export default function FooterCard() {
   return (
     <div>
-      <div class="card-group">
-        <div class="card">
-          <img class="card-img-top" src={changeimg} alt="Card image cap" />
+      <div className="card-group">
+        <div className="card">
+          <img className="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
-        <div class="card">
-          <img class="card-img-top" src={changeimg} alt="Card image cap" />
+        <div className="card">
+          <img className="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
-        <div class="card">
-          <img class="card-img-top" src={changeimg} alt="Card image cap" />
+        <div className="card">
+          <img className="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
-        <div class="card">
-          <img class="card-img-top" src={changeimg} alt="Card image cap" />
+        <div className="card">
+          <img className="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
-        <div class="card">
-          <img class="card-img-top" src={changeimg} alt="Card image cap" />
+        <div className="card">
+          <img className="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
-        <div class="card">
-          <img class="card-img-top" src={changeimg} alt="Card image cap" />
+        <div className="card">
+          <img className="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
       </div>
     </div>
