@@ -10,19 +10,19 @@ export default function FooterCard() {
           <img class="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
         <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap" />
+          <img class="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
         <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap" />
+          <img class="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
         <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap" />
+          <img class="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
         <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap" />
+          <img class="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
         <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap" />
+          <img class="card-img-top" src={changeimg} alt="Card image cap" />
         </div>
       </div>
     </div>
