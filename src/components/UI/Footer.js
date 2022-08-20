@@ -5,10 +5,7 @@ import FooterCard from "./FooterCard";
 export default function Footer() {
   return (
     <div>
-      <footer
-        className="text-center text-white"
-        style={{ backgroundColor: "rgb(33 37 41)" }}
-      >
+      <footer className="text-center text-white">
         <FooterCard />
         <div
           className="text-center p-3"
