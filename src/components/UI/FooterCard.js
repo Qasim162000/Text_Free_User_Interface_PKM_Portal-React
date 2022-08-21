@@ -8,33 +8,21 @@ import "tippy.js/dist/tippy.css";
 export default function FooterCard() {
   tippy("#myButton1", {
     content: "Add Text here",
-    placement: "top",
-    animation: "fade",
   });
   tippy("#myButton2", {
     content: "Add Text here",
-    placement: "top",
-    animation: "fade",
   });
   tippy("#myButton3", {
     content: "Add Text here",
-    placement: "top",
-    animation: "fade",
   });
   tippy("#myButton4", {
     content: "Add Text here",
-    placement: "top",
-    animation: "fade",
   });
   tippy("#myButton5", {
     content: "Add Text here",
-    placement: "top",
-    animation: "fade",
   });
   tippy("#myButton6", {
     content: "Add Text here",
-    placement: "top",
-    animation: "fade",
   });
   const myStyle = { fontSize: 48, padding: 15 };
   return (
