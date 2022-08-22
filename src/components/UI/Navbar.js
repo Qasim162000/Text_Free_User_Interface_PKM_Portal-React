@@ -11,9 +11,11 @@ export default function Navbar() {
         style={{ backgroundColor: "#172b4d" }}
       >
         <div className="container">
-          <a className="navbar-brand" href="#/">
+          <Link
+          to="/"
+           className="navbar-brand">
             <img src={logo} alt="logo" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -49,72 +51,72 @@ export default function Navbar() {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Character Certificate
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       General Police Verification
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Learner Driving License
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Driving License Renewal
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       International Driving License
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Duplicate Driving License
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Endorsement of a License
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Employee Registration
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Tenants Registration
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Vehicle Verification
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Loss Report
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Crime Report
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Women Violence Report
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#/">
+                    <a className="dropdown-item" href="/">
                       Copy of FIR
                     </a>
                   </li>
