@@ -11,9 +11,7 @@ export default function Navbar() {
         style={{ backgroundColor: "#172b4d" }}
       >
         <div className="container">
-          <Link
-          to="/"
-           className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             <img src={logo} alt="logo" />
           </Link>
           <button
@@ -33,9 +31,7 @@ export default function Navbar() {
           >
             <ul className="navbar-nav">
               <li className="nav-item ">
-                <Link
-                to="/"
-                 className="nav-link active" aria-current="page">
+                <Link to="/" className="nav-link active" aria-current="page">
                   Home
                 </Link>
               </li>
@@ -123,43 +119,38 @@ export default function Navbar() {
                 </ul>
               </li>
               <li className="nav-item">
-              <Link
-                to="Centers"
-                className="nav-link">
-                Our Centers
-              </Link>
+                <Link to="Centers" className="nav-link">
+                  Our Centers
+                </Link>
               </li>
               <li className="nav-item">
-                <Link
-                to="Global"
-                className="nav-link">
+                <Link to="Global" className="nav-link">
                   PKM Global
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                to="Verify"
-                className="nav-link" >
+                <Link to="Verify" className="nav-link">
                   Verify
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                to="Track"
-                className="nav-link">
+                <Link to="Track" className="nav-link">
                   Track
                 </Link>
-              </li>      
-              <button type="button" 
-              className="btn btn-light mx-1 my-1">
+              </li>
+
               <Link
-              to="SignIn">
+                type="button"
+                className="btn btn-light mx-1 my-1"
+                to="SignIn"
+              >
                 Sign In
-                </Link>                  
-              </button>                  
+              </Link>
+
               <button
                 type="button"
-                className="btn btn-outline-danger mx-1 my-1">
+                className="btn btn-outline-danger mx-1 my-1"
+              >
                 اردو
               </button>
             </ul>
