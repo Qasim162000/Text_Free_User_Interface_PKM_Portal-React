@@ -29,11 +29,11 @@ export default function FooterCard() {
     <div>
       <div className="card-group" style={{ backgroundColor: "rgb(33 37 41)" }}>
         <Link className="card" to={"services"}>
-          <i id="myButton1" className="fa fa-address-book" style={myStyle}></i>
+          <i className="fa-solid fa-flag" id="myButton1" style={myStyle}></i>
         </Link>
 
         <Link className="card" to={"services"}>
-          <i id="myButton2" className="fa fa-address-book" style={myStyle}></i>
+          <i id="myButton2" className="fa fa-automobile" style={myStyle}></i>
         </Link>
 
         <Link className="card" to={"services"}>
