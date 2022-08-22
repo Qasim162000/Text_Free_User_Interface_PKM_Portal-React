@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo.png";
+import { Link } from "react-router-dom";
 import "../../styles/Navbar.css";
 
 export default function Navbar() {
@@ -30,9 +31,11 @@ export default function Navbar() {
           >
             <ul className="navbar-nav">
               <li className="nav-item ">
-                <a className="nav-link active" aria-current="page" href="#/">
+                <Link
+                to="/"
+                 className="nav-link active" aria-current="page">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -118,32 +121,43 @@ export default function Navbar() {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#/">
-                  Our Centers
-                </a>
+              <Link
+                to="Centers"
+                className="nav-link">
+                Our Centers
+              </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#/">
+                <Link
+                to="Global"
+                className="nav-link">
                   PKM Global
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#/">
+                <Link
+                to="Verify"
+                className="nav-link" >
                   Verify
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#/">
+                <Link
+                to="Track"
+                className="nav-link">
                   Track
-                </a>
-              </li>
-              <button type="button" className="btn btn-light mx-1 my-1">
+                </Link>
+              </li>      
+              <button type="button" 
+              className="btn btn-light mx-1 my-1">
+              <Link
+              to="SignIn">
                 Sign In
-              </button>
+                </Link>                  
+              </button>                  
               <button
                 type="button"
-                className="btn btn-outline-danger mx-1 my-1"
-              >
+                className="btn btn-outline-danger mx-1 my-1">
                 اردو
               </button>
             </ul>
