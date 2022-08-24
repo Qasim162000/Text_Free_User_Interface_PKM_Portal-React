@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import "../../styles/FooterCard.css";
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
-import LocalPoliceIcon from '@mui/icons-material/LocalPolice';
-import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
-import AddIcCallIcon from '@mui/icons-material/AddIcCall';
-import HomeIcon from '@mui/icons-material/Home';
-import VpnKeyIcon from '@mui/icons-material/VpnKey';
-import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-
+import LocalPoliceIcon from "@mui/icons-material/LocalPolice";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import AddIcCallIcon from "@mui/icons-material/AddIcCall";
+import HomeIcon from "@mui/icons-material/Home";
+import VpnKeyIcon from "@mui/icons-material/VpnKey";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 
 export default function FooterCard() {
   tippy("#myButton1", {
@@ -31,9 +30,9 @@ export default function FooterCard() {
     content: "Add Text here",
   });
   const myStyle = {
-    height: 80,
-    fontSize: 80,
-    color:"white",
+    height: 70,
+    fontSize: 50,
+    color: "white",
     justifyContent: "center",
     textAlign: "center",
     margin: "auto",

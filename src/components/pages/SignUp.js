@@ -3,10 +3,7 @@ import "../../styles/SignUp.css";
 export default function SignUp() {
   return (
     <>
-      <section
-        className="vh-100"
-        style={{ backgroundColor: "eee", margin: "40px 0px" }}
-      >
+      <section className="vh-100" style={{ backgroundColor: "eee" }}>
         <div className="container h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-lg-12 col-xl-11">
