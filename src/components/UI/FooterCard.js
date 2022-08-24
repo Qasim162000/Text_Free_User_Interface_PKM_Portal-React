@@ -33,6 +33,7 @@ export default function FooterCard() {
   const myStyle = {
     height: 80,
     fontSize: 80,
+    color:"white",
     justifyContent: "center",
     textAlign: "center",
     margin: "auto",
@@ -65,7 +66,7 @@ export default function FooterCard() {
           <VpnKeyIcon style={myStyle} />
         </Link>
 
-        <Link className="card" to={"sign-out"}>
+        <Link className="card" to={"sign-up"}>
           <ExitToAppIcon style={myStyle} />
         </Link>
       </div>

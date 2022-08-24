@@ -1,12 +1,8 @@
 .fa {
   background-color: #172b4d;
-<<<<<<< HEAD
-}/*# sourceMappingURL=FooterCard.css.map */
-
-=======
 }
 
 .card-group > .card {
-  background-color: black;
+  background-color: #172b4d;
+  border: 1px solid white;
 }/*# sourceMappingURL=FooterCard.css.map */
->>>>>>> 476f64ee457f3796716b106eef18fbb70fa18f2b
