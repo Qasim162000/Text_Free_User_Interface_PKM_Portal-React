@@ -3,7 +3,13 @@ import { Link } from "react-router-dom";
 import "../../styles/FooterCard.css";
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
-import SaveIcon from "@mui/icons-material/Save";
+import LocalPoliceIcon from '@mui/icons-material/LocalPolice';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import PublicIcon from '@mui/icons-material/Public';
+import HomeIcon from '@mui/icons-material/Home';
+import VpnKeyIcon from '@mui/icons-material/VpnKey';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+
 
 export default function FooterCard() {
   tippy("#myButton1", {
@@ -40,27 +46,27 @@ export default function FooterCard() {
         }}
       >
         <Link className="card" to={"services"}>
-          <SaveIcon style={myStyle} />
+          <HomeIcon style={myStyle} />
         </Link>
 
         <Link className="card" to={"services"}>
-          <SaveIcon style={myStyle} />
+          <LocalPoliceIcon style={myStyle} />
         </Link>
 
         <Link className="card" to={"services"}>
-          <SaveIcon style={myStyle} />
+          <BusinessCenterIcon style={myStyle} />
         </Link>
 
         <Link className="card" to={"services"}>
-          <SaveIcon style={myStyle} />
+          <PublicIcon style={myStyle} />
         </Link>
 
         <Link className="card" to={"services"}>
-          <SaveIcon style={myStyle} />
+          <VpnKeyIcon style={myStyle} />
         </Link>
 
         <Link className="card" to={"services"}>
-          <SaveIcon style={myStyle} />
+          <ExitToAppIcon style={myStyle} />
         </Link>
       </div>
     </div>

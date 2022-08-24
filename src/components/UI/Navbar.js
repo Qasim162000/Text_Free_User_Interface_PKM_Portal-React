@@ -119,22 +119,22 @@ export default function Navbar() {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link to="Centers" className="nav-link">
+                <Link to="centers" className="nav-link">
                   Our Centers
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="Global" className="nav-link">
+                <Link to="global" className="nav-link">
                   PKM Global
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="Verify" className="nav-link">
+                <Link to="verify" className="nav-link">
                   Verify
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="Track" className="nav-link">
+                <Link to="track" className="nav-link">
                   Track
                 </Link>
               </li>
@@ -142,7 +142,7 @@ export default function Navbar() {
               <Link
                 type="button"
                 className="btn btn-light mx-1 my-1"
-                to="SignIn"
+                to="sign-in"
               >
                 Sign In
               </Link>
