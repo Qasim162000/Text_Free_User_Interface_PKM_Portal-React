@@ -10,7 +10,7 @@ import SignIn from "./components/pages/SignIn";
 import SignUp from "./components/pages/SignUp";
 import Track from "./components/pages/Track";
 import Verify from "./components/pages/Verify";
-import Global from "./components/pages/Global";
+import Contact from "./components/pages/Contact";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="services" element={<Services />} />
           <Route path="centers" element={<Centers />} />
-          <Route path="global" element={<Global />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="sign-in" element={<SignIn />} />
           <Route path="sign-up" element={<SignUp />} />
           <Route path="track" element={<Track />} />

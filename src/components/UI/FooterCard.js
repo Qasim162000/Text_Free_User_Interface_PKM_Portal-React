@@ -5,7 +5,7 @@ import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
 import LocalPoliceIcon from '@mui/icons-material/LocalPolice';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
-import PublicIcon from '@mui/icons-material/Public';
+import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import HomeIcon from '@mui/icons-material/Home';
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
@@ -58,8 +58,8 @@ export default function FooterCard() {
           <BusinessCenterIcon style={myStyle} />
         </Link>
 
-        <Link className="card" to={"global"}>
-          <PublicIcon style={myStyle} />
+        <Link className="card" to={"contact"}>
+          <AddIcCallIcon style={myStyle} />
         </Link>
 
         <Link className="card" to={"sign-in"}>

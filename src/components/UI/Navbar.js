@@ -124,8 +124,8 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="global" className="nav-link">
-                  PKM Global
+                <Link to="contact" className="nav-link">
+                  Contact
                 </Link>
               </li>
               <li className="nav-item">
