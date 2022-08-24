@@ -1,9 +1,9 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/FooterCard.css";
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css";
+import SaveIcon from "@mui/icons-material/Save";
 
 export default function FooterCard() {
   tippy("#myButton1", {
@@ -24,32 +24,43 @@ export default function FooterCard() {
   tippy("#myButton6", {
     content: "Add Text here",
   });
-  const myStyle = { fontSize: 48, padding: 15 };
+  const myStyle = {
+    height: 80,
+    fontSize: 80,
+    justifyContent: "center",
+    textAlign: "center",
+    margin: "auto",
+  };
   return (
     <div>
-      <div className="card-group" style={{ backgroundColor: "rgb(33 37 41)" }}>
+      <div
+        className="card-group"
+        style={{
+          backgroundColor: "rgb(33 37 41)",
+        }}
+      >
         <Link className="card" to={"services"}>
-          <i className="fa-solid fa-flag" id="myButton1" style={myStyle}></i>
+          <SaveIcon style={myStyle} />
         </Link>
 
         <Link className="card" to={"services"}>
-          <i id="myButton2" className="fa fa-automobile" style={myStyle}></i>
+          <SaveIcon style={myStyle} />
         </Link>
 
         <Link className="card" to={"services"}>
-          <i id="myButton3" className="fa fa-address-book" style={myStyle}></i>
+          <SaveIcon style={myStyle} />
         </Link>
 
         <Link className="card" to={"services"}>
-          <i id="myButton4" className="fa fa-address-book" style={myStyle}></i>
+          <SaveIcon style={myStyle} />
         </Link>
 
         <Link className="card" to={"services"}>
-          <i id="myButton5" className="fa fa-address-book" style={myStyle}></i>
+          <SaveIcon style={myStyle} />
         </Link>
 
         <Link className="card" to={"services"}>
-          <i id="myButton6" className="fa fa-address-book" style={myStyle}></i>
+          <SaveIcon style={myStyle} />
         </Link>
       </div>
     </div>
