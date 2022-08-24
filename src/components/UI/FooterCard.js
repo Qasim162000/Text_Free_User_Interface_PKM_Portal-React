@@ -45,7 +45,7 @@ export default function FooterCard() {
           backgroundColor: "rgb(33 37 41)",
         }}
       >
-        <Link className="card" to={"services"}>
+        <Link className="card" to={"/"}>
           <HomeIcon style={myStyle} />
         </Link>
 
@@ -53,19 +53,19 @@ export default function FooterCard() {
           <LocalPoliceIcon style={myStyle} />
         </Link>
 
-        <Link className="card" to={"services"}>
+        <Link className="card" to={"centers"}>
           <BusinessCenterIcon style={myStyle} />
         </Link>
 
-        <Link className="card" to={"services"}>
+        <Link className="card" to={"global"}>
           <PublicIcon style={myStyle} />
         </Link>
 
-        <Link className="card" to={"services"}>
+        <Link className="card" to={"sign-in"}>
           <VpnKeyIcon style={myStyle} />
         </Link>
 
-        <Link className="card" to={"services"}>
+        <Link className="card" to={"sign-out"}>
           <ExitToAppIcon style={myStyle} />
         </Link>
       </div>
