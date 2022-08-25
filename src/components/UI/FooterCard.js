@@ -50,23 +50,23 @@ export default function FooterCard() {
         </Link>
 
         <Link className="card" to={"services"}>
-          <LocalPoliceIcon style={myStyle} />
+          <LocalPoliceIcon id="#myButton2" style={myStyle} />
         </Link>
 
         <Link className="card" to={"centers"}>
-          <BusinessCenterIcon style={myStyle} />
+          <BusinessCenterIcon id="#myButton3" style={myStyle} />
         </Link>
 
         <Link className="card" to={"contact"}>
-          <AddIcCallIcon style={myStyle} />
+          <AddIcCallIcon id="#myButton4" style={myStyle} />
         </Link>
 
         <Link className="card" to={"sign-in"}>
-          <VpnKeyIcon style={myStyle} />
+          <VpnKeyIcon id="#myButton5" style={myStyle} />
         </Link>
 
         <Link className="card" to={"sign-up"}>
-          <ExitToAppIcon style={myStyle} />
+          <ExitToAppIcon id="#myButton6" style={myStyle} />
         </Link>
       </div>
     </div>
