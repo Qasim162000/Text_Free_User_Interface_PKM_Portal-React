@@ -31,7 +31,7 @@ export default function FooterCard() {
   });
   const myStyle = {
     height: 70,
-    fontSize: 50,
+    fontSize: 45,
     color: "white",
     justifyContent: "center",
     textAlign: "center",
@@ -46,7 +46,7 @@ export default function FooterCard() {
         }}
       >
         <Link className="card" to={"/"}>
-          <HomeIcon style={myStyle} />
+          <HomeIcon id="#myButton1" style={myStyle} />
         </Link>
 
         <Link className="card" to={"services"}>

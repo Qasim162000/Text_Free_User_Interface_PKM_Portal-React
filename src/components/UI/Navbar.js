@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "./logo.png";
 import { Link } from "react-router-dom";
 import "../../styles/Navbar.css";
 
-export default function Navbar() {
-  const [link, setLink] = useState("");
-  const sendLink = (event) => {
-    setLink(event.target.href);
-  };
+export default function Navbar(props) {
   return (
     <div>
       <nav
@@ -53,74 +49,126 @@ export default function Navbar() {
                   <li>
                     <Link
                       className="dropdown-item"
-                      onClick={sendLink}
+                      onClick={props.onClick}
                       to={"/services#id=a"}
                     >
                       Character Certificate
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=b"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=b"}
+                    >
                       General Police Verification
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=c"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=c"}
+                    >
                       Learner Driving License
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=d"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=d"}
+                    >
                       Driving License Renewal
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=e"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=e"}
+                    >
                       International Driving License
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=f"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=f"}
+                    >
                       Duplicate Driving License
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=g"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=g"}
+                    >
                       Endorsement of a License
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=h"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=h"}
+                    >
                       Employee Registration
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=i"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=i"}
+                    >
                       Tenants Registration
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=j"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=j"}
+                    >
                       Vehicle Verification
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=k"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=k"}
+                    >
                       Loss Report
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=l"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=l"}
+                    >
                       Crime Report
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=m"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=m"}
+                    >
                       Women Violence Report
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"/services#id=n"}>
+                    <Link
+                      className="dropdown-item"
+                      onClick={props.onClick}
+                      to={"/services#id=n"}
+                    >
                       Copy of FIR
                     </Link>
                   </li>
