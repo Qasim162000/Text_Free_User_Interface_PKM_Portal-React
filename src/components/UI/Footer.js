@@ -11,7 +11,7 @@ export default function Footer() {
           className="text-center p-3"
           style={{ backgroundColor: "rgb(33 37 41)" }}
         >
-          © 2020 Copyright: PUNJAB POLICE, PAKISTAN - ALL RIGHTS RESERVED.
+          © 2020 PUNJAB POLICE, PAKISTAN | ALL RIGHTS RESERVED.
         </div>
       </footer>
     </div>

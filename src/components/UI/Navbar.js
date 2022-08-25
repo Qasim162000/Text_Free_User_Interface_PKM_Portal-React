@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./logo.png";
 import { Link } from "react-router-dom";
 import "../../styles/Navbar.css";
 
 export default function Navbar() {
+  const [link, setLink] = useState("");
+  const sendLink = (event) => {
+    setLink(event.target.href);
+  };
   return (
     <div>
       <nav
@@ -36,85 +40,89 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="#/"
+                  to={"/services"}
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Our Services
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link
+                      className="dropdown-item"
+                      onClick={sendLink}
+                      to={"/services#id=a"}
+                    >
                       Character Certificate
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=b"}>
                       General Police Verification
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=c"}>
                       Learner Driving License
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=d"}>
                       Driving License Renewal
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=e"}>
                       International Driving License
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=f"}>
                       Duplicate Driving License
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=g"}>
                       Endorsement of a License
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=h"}>
                       Employee Registration
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=i"}>
                       Tenants Registration
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=j"}>
                       Vehicle Verification
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=k"}>
                       Loss Report
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=l"}>
                       Crime Report
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=m"}>
                       Women Violence Report
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to={"/services#id=n"}>
                       Copy of FIR
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
