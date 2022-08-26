@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
 
 function Centers(props) {
+  document.title = "PKM Punjab - Our Centers";
   return (
     <Tab.Container
       {...props.changeProgress(20)}

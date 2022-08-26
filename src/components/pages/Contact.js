@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/Contact.css";
 
 export default function Contact(props) {
+  document.title = "PKM Punjab - Contact Us";
   return (
     <div
       {...props.changeProgress(10)}

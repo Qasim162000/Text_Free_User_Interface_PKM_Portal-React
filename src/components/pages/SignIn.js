@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import validator from "validator";
 
 export default function SignIn(props) {
+  document.title = "PKM Punjab - Sign In";
   const [message, setMessage] = useState("");
   const [error, setError] = useState(null);
   props.changeProgress(20);

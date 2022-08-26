@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
 
 export default function Services(props) {
+  document.title = "PKM Punjab - Our Services";
   return (
     <Tab.Container
       {...props.changeProgress(20)}

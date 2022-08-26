@@ -4,6 +4,7 @@ import ServicesCard from "../UI/ServicesCard";
 import Slider from "../UI/Slider";
 
 export default function Home(props) {
+  document.title = "PKM Punjab";
   return (
     <>
       <Slider {...props.changeProgress(20)} />

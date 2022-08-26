@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/SignUp.css";
 export default function SignUp(props) {
+  document.title = "PKM Punjab - Sign Up";
   return (
     <>
       <section
