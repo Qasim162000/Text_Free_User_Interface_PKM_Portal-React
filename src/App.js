@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles/App.css";
 import Footer from "./components/UI/Footer";
 import Navbar from "./components/UI/Navbar";
@@ -13,14 +13,18 @@ import Verify from "./components/pages/Verify";
 import Contact from "./components/pages/Contact";
 import LoadingBar from "react-top-loading-bar";
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    changeProgress();
+  }, []);
+
   const [link, setLink] = useState("");
   const [progress, setProgress] = useState(0);
   const sendLink = (event) => {
     setLink(event.target.href);
   };
-  let changeProgress = async (progress) => {
-    await setProgress(progress);
+  const changeProgress = (progress) => {
+    setProgress(progress);
   };
   return (
     <div className="App">
@@ -63,5 +67,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
