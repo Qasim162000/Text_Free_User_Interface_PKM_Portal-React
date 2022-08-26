@@ -4,12 +4,12 @@ import "../../styles/ServicesCard.css";
 import cc from "./ServiceCardImages/10.png";
 import ldl from "./ServiceCardImages/9.png";
 import wvr from "./ServiceCardImages/8.png";
-import tr from "./ServiceCardImages/7.png"; 
+import tr from "./ServiceCardImages/7.png";
 import er from "./ServiceCardImages/6.png";
-import vr from "./ServiceCardImages/5.png"; 
+import vr from "./ServiceCardImages/5.png";
 import cof from "./ServiceCardImages/4.png";
 import gpv from "./ServiceCardImages/3.png";
-import cr from "./ServiceCardImages/2.png"; 
+import cr from "./ServiceCardImages/2.png";
 import lr from "./ServiceCardImages/1.png";
 
 export default function ServicesCard() {
@@ -29,7 +29,7 @@ export default function ServicesCard() {
   };
 
   return (
-    <div>
+    <div style={{ margin: "80px 0px" }}>
       <h1 className="mt-5 mb-4" style={{ fontSize: 52 }}>
         Our Services
       </h1>
@@ -37,7 +37,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=a" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src ={cc}
+            src={cc}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -48,7 +48,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=b" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src ={gpv}
+            src={gpv}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -59,7 +59,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=c" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src ={ldl}
+            src={ldl}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -70,7 +70,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=h" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src ={er}
+            src={er}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -81,7 +81,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=n" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src ={cof}
+            src={cof}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -94,7 +94,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=m" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src ={wvr}
+            src={wvr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -105,7 +105,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=l" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src ={cr}
+            src={cr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -116,7 +116,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=k" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src ={lr}
+            src={lr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -127,7 +127,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=i" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src ={tr}
+            src={tr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -138,7 +138,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=j" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src ={vr}
+            src={vr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
