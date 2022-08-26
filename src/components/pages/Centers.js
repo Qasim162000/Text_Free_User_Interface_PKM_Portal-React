@@ -3,24 +3,30 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
 
-function Centers() {
+function Centers(props) {
   return (
-    <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
+    <Tab.Container
+      id="list-group-tabs-example"
+      {...props.changeProgress(20)}
+      defaultActiveKey="#link1"
+    >
       <Row>
         <Col sm={4}>
           <ListGroup>
             <ListGroup.Item action href="#link1">
               Link 1
             </ListGroup.Item>
-            <ListGroup.Item action href="#link2">
+            <ListGroup.Item {...props.changeProgress(40)} action href="#link2">
               Link 2
             </ListGroup.Item>
           </ListGroup>
         </Col>
-        <Col sm={8}>
+        <Col sm={8} {...props.changeProgress(70)}>
           <Tab.Content>
             <Tab.Pane eventKey="#link1">asdnaskdn</Tab.Pane>
-            <Tab.Pane eventKey="#link2">Meow</Tab.Pane>
+            <Tab.Pane {...props.changeProgress(100)} eventKey="#link2">
+              Meow
+            </Tab.Pane>
           </Tab.Content>
         </Col>
       </Row>

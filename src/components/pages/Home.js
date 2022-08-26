@@ -3,12 +3,12 @@ import MarkazGallery from "../UI/MarkazGallery";
 import ServicesCard from "../UI/ServicesCard";
 import Slider from "../UI/Slider";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
-      <Slider />
-      <ServicesCard />
-      <MarkazGallery />
+      <Slider {...props.changeProgress(20)} />
+      <ServicesCard {...props.changeProgress(50)} />
+      <MarkazGallery {...props.changeProgress(100)} />
     </>
   );
 }

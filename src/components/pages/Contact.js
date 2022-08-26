@@ -1,9 +1,13 @@
 import React from "react";
 import "../../styles/Contact.css";
 
-export default function Contact() {
+export default function Contact(props) {
   return (
-    <div className="container" style={{ marginTop: "3%", marginBottom: "3%" }}>
+    <div
+      {...props.changeProgress(10)}
+      className="container"
+      style={{ marginTop: "3%", marginBottom: "3%" }}
+    >
       <div style={{ textAlign: "center" }}>
         <h2>Contact Us</h2>
         <p>
@@ -14,6 +18,7 @@ export default function Contact() {
       <div className="row">
         <div className="column">
           <img
+            {...props.changeProgress(50)}
             src="https://cdn.discordapp.com/attachments/643501117095018506/1012415028852445194/contacts-friends-groups-icon-with-png-and-vector-format-for-free-661239-removebg-preview.png"
             alt="ContactImage"
             style={{ width: "100%" }}
@@ -44,6 +49,7 @@ export default function Contact() {
             />
             <label htmlFor="fname">Contact No.</label>
             <input
+              {...props.changeProgress(70)}
               type="tel"
               id="cname"
               name="contact"
@@ -56,7 +62,11 @@ export default function Contact() {
               placeholder="Write something.."
               style={{ height: "170px" }}
             ></textarea>
-            <input type="submit" value="Submit" />
+            <input
+              type="submit"
+              value="Submit"
+              {...props.changeProgress(100)}
+            />
           </form>
         </div>
       </div>

@@ -1,9 +1,13 @@
 import React from "react";
 import "../../styles/SignUp.css";
-export default function SignUp() {
+export default function SignUp(props) {
   return (
     <>
-      <section className="vh-100" style={{ backgroundColor: "eee" }}>
+      <section
+        {...props.changeProgress(20)}
+        className="vh-100"
+        style={{ backgroundColor: "eee" }}
+      >
         <div className="container h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-lg-12 col-xl-11">
@@ -26,6 +30,7 @@ export default function SignUp() {
                             <label
                               className="form-label"
                               htmlFor="form3Example1c"
+                              {...props.changeProgress(40)}
                             >
                               Your Name
                             </label>
@@ -60,6 +65,7 @@ export default function SignUp() {
                             <label
                               className="form-label"
                               htmlFor="form3Example4c"
+                              {...props.changeProgress(70)}
                             >
                               Password
                             </label>
@@ -111,6 +117,7 @@ export default function SignUp() {
                     </div>
                     <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
                       <img
+                        {...props.changeProgress(100)}
                         src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
                         className="img-fluid"
                         alt="Sign up img"
