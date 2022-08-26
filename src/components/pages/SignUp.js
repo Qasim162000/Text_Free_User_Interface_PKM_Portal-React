@@ -1,3 +1,4 @@
+import { Link } from "@mui/material";
 import React from "react";
 import "../../styles/SignUp.css";
 export default function SignUp(props) {
@@ -102,7 +103,7 @@ export default function SignUp(props) {
                             htmlFor="form2Example3"
                           >
                             I agree all statements in{" "}
-                            <a href="#!">Terms of service</a>
+                            <Link to="#!">Terms of service</Link>
                           </label>
                         </div>
 

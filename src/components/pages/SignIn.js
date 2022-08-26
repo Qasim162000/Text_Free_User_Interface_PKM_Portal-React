@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import validator from "validator";
 
 export default function SignIn(props) {
@@ -144,7 +145,7 @@ export default function SignIn(props) {
                             className="form-check-label"
                             htmlFor="form2Example3"
                           >
-                            Not a member? <a href="/sign-up">Register</a>
+                            Not a member? <Link to={"/sign-up"}>Register</Link>
                           </label>
                         </div>
                       </form>
