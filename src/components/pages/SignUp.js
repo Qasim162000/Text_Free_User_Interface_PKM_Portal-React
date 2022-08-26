@@ -1,6 +1,8 @@
 import { Link } from "@mui/material";
 import React from "react";
 import "../../styles/SignUp.css";
+import signup from "../UI/OtherImages/signup.png"
+
 export default function SignUp(props) {
   document.title = "PKM Punjab - Sign Up";
   return (
@@ -120,7 +122,7 @@ export default function SignUp(props) {
                     <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
                       <img
                         {...props.changeProgress(100)}
-                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                        src={signup}
                         className="img-fluid"
                         alt="Sign up img"
                       />

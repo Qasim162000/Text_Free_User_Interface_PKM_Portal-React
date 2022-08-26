@@ -1,7 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/ServicesCard.css";
-
+import cc from "./ServiceCardImages/10.png";
+import ldl from "./ServiceCardImages/9.png";
+import wvr from "./ServiceCardImages/8.png";
+import tr from "./ServiceCardImages/7.png"; 
+import er from "./ServiceCardImages/6.png";     
+import vr from "./ServiceCardImages/5.png"; 
+import cof from "./ServiceCardImages/4.png";  
+import gpv from "./ServiceCardImages/3.png";  
+import cr from "./ServiceCardImages/2.png"; 
+import lr from "./ServiceCardImages/1.png";  
 export default function ServicesCard() {
   const myStyle = {
     width: "18rem",
@@ -12,16 +21,24 @@ export default function ServicesCard() {
     borderRadius: 25,
   };
 
+  const cardStyle = {
+    textDecoration: "none",
+    color: "black",
+    borderRadius: "5%",
+    boxShadow: "20px 20px 50px 10px grey",
+  };
+
+
   return (
     <div>
       <h1 className="mt-5" style={{ fontSize: 52 }}>
         Our Services
       </h1>
       <div className="d-flex justify-content-center pb-2 pt-2">
-        <Link to="services#id=a" className="card m-1">
+        <Link style={cardStyle} to="services#id=a" className="card m-1">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/10.png"
+            src ={cc}            
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -29,10 +46,10 @@ export default function ServicesCard() {
             <h5 className="card-title">Character Certificate</h5>
           </div>
         </Link>
-        <Link to="services#id=b" className="card m-1">
+        <Link style={cardStyle} to="services#id=b" className="card m-1">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/3.png"
+            src ={gpv}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -40,10 +57,10 @@ export default function ServicesCard() {
             <h5 className="card-title">General Police Verification</h5>
           </div>
         </Link>
-        <Link to="services#id=c" className="card m-1">
+        <Link style={cardStyle} to="services#id=c" className="card m-1">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/9.png"
+            src ={ldl}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -51,10 +68,10 @@ export default function ServicesCard() {
             <h5 className="card-title">Learner Driving License</h5>
           </div>
         </Link>
-        <Link to="services#id=h" className="card m-1">
+        <Link style={cardStyle} to="services#id=h" className="card m-1">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/6.png"
+            src ={er}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -62,10 +79,10 @@ export default function ServicesCard() {
             <h5 className="card-title">Employee Registeration</h5>
           </div>
         </Link>
-        <Link to="services#id=n" className="card m-1">
+        <Link style={cardStyle} to="services#id=n" className="card m-1">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/4.png"
+            src ={cof}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -75,10 +92,10 @@ export default function ServicesCard() {
         </Link>
       </div>
       <div className="d-flex justify-content-center">
-        <Link to="services#id=m" className="card m-1">
+        <Link style={cardStyle} to="services#id=m" className="card m-1">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/8.png"
+            src ={wvr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -86,10 +103,10 @@ export default function ServicesCard() {
             <h5 className="card-title">Womens Violence Report</h5>
           </div>
         </Link>
-        <Link to="services#id=l" className="card m-1">
+        <Link style={cardStyle} to="services#id=l" className="card m-1">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/2.png"
+            src ={cr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -97,10 +114,10 @@ export default function ServicesCard() {
             <h5 className="card-title">Crime Report</h5>
           </div>
         </Link>
-        <Link to="services#id=k" className="card m-1">
+        <Link style={cardStyle} to="services#id=k" className="card m-1">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/1.png"
+            src ={lr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -108,10 +125,10 @@ export default function ServicesCard() {
             <h5 className="card-title">Loss Report</h5>
           </div>
         </Link>
-        <Link to="services#id=i" className="card m-1">
+        <Link style={cardStyle} to="services#id=i" className="card m-1">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/7.png"
+            src ={tr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -119,10 +136,10 @@ export default function ServicesCard() {
             <h5 className="card-title">Tenants Registeration</h5>
           </div>
         </Link>
-        <Link to="services#id=j" className="card m-1">
+        <Link style={cardStyle} to="services#id=j" className="card m-1">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/5.png"
+            src ={vr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />

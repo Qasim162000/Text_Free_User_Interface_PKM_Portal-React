@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import validator from "validator";
+import signin from "../UI/OtherImages/signin.png"
 
 export default function SignIn(props) {
   document.title = "PKM Punjab - Sign In";
@@ -153,7 +154,7 @@ export default function SignIn(props) {
                     <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
                       <img
                         {...props.changeProgress(100)}
-                        src="https://img.freepik.com/premium-vector/login-form-template_123447-475.jpg?w=2000"
+                        src={signin}
                         className="img-fluid"
                         alt="Login-page"
                       />

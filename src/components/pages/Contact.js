@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Contact.css";
-
+import contactus from "../UI/OtherImages/contactus.png"
 export default function Contact(props) {
   document.title = "PKM Punjab - Contact Us";
   return (
@@ -20,7 +20,7 @@ export default function Contact(props) {
         <div className="column">
           <img
             {...props.changeProgress(50)}
-            src="https://cdn.discordapp.com/attachments/643501117095018506/1012415028852445194/contacts-friends-groups-icon-with-png-and-vector-format-for-free-661239-removebg-preview.png"
+            src={contactus}
             alt="ContactImage"
             style={{ width: "100%" }}
           />

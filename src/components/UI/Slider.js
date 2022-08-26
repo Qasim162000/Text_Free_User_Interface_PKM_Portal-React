@@ -1,5 +1,7 @@
 import React from "react";
-
+import bg1 from "./SliderImages/bg1.jpg";
+import bg2 from "./SliderImages/bg2.jpg";
+import bg3 from "./SliderImages/bg3.jpg";
 export default function Slider() {
   return (
     <div
@@ -31,13 +33,13 @@ export default function Slider() {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="https://pkm.punjab.gov.pk/assets/frontend/images/slider/bg1.jpg" className="d-block w-100" alt="sliderimage1" />
+          <img src={bg1} className="d-block w-100" alt="sliderimage1" />
         </div>
         <div className="carousel-item">
-          <img src="https://pkm.punjab.gov.pk/assets/frontend/images/slider/bg2.jpg" className="d-block w-100" alt="sliderimage2" />
+          <img src={bg2} className="d-block w-100" alt="sliderimage2" />
         </div>
         <div className="carousel-item">
-          <img src="https://pkm.punjab.gov.pk/assets/frontend/images/slider/bg3.jpg" className="d-block w-100" alt="sliderimage3" />
+          <img src={bg3} className="d-block w-100" alt="sliderimage3" />
         </div>
       </div>
       <button
