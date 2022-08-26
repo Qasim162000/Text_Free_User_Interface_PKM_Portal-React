@@ -12,7 +12,7 @@ import pic8 from "./MarkazGallery/8.jpg";
 
 export default function MarkazGallery() {
   return (
-    <div>
+    <div style={{ background: "#172b4d", padding: "40px 15px" }}>
       <div className="row p-1">
         <div className="col-3">
           <ModalImage small={pic1} large={pic1} />
