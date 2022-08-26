@@ -1,6 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/ServicesCard.css";
+import cc from "./ServiceCardImages/10.png";
+import ldl from "./ServiceCardImages/9.png";
+import wvr from "./ServiceCardImages/8.png";
+import tr from "./ServiceCardImages/7.png"; 
+import er from "./ServiceCardImages/6.png";
+import vr from "./ServiceCardImages/5.png"; 
+import cof from "./ServiceCardImages/4.png";
+import gpv from "./ServiceCardImages/3.png";
+import cr from "./ServiceCardImages/2.png"; 
+import lr from "./ServiceCardImages/1.png";
 
 export default function ServicesCard() {
   const myStyle = {
@@ -27,7 +37,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=a" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/10.png"
+            src ={cc}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -38,7 +48,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=b" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/3.png"
+            src ={gpv}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -49,7 +59,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=c" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/9.png"
+            src ={ldl}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -60,7 +70,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=h" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/6.png"
+            src ={er}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -71,7 +81,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=n" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/4.png"
+            src ={cof}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -84,7 +94,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=m" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/8.png"
+            src ={wvr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -95,7 +105,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=l" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/2.png"
+            src ={cr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -106,7 +116,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=k" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/1.png"
+            src ={lr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -117,7 +127,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=i" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/7.png"
+            src ={tr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
@@ -128,7 +138,7 @@ export default function ServicesCard() {
         <Link style={cardStyle} to="services#id=j" className="card m-1 mx-2">
           <img
             style={myStyle}
-            src="https://pkm.punjab.gov.pk/assets/frontend/images/portfolio-2/5.png"
+            src ={vr}
             className="card-img-top  img-thumbnail"
             alt="Cardimg1"
           />
