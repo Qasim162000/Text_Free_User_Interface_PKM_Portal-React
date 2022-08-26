@@ -14,34 +14,46 @@ export default function Services(props) {
         <Col sm={4}>
           <ListGroup>
             <ListGroup.Item action href="#id=a">
-              Link 1
+              Character Certificate
             </ListGroup.Item>
             <ListGroup.Item action href="#id=b">
-              Link 2
+              General Police Verification
             </ListGroup.Item>
             <ListGroup.Item action href="#id=c">
-              Link 3
+              Learner Driving License
             </ListGroup.Item>
             <ListGroup.Item action href="#id=d">
-              Link 4
+              Driving License Renewal
             </ListGroup.Item>
             <ListGroup.Item {...props.changeProgress(50)} action href="#id=e">
-              Link 5
+              International Driving License
             </ListGroup.Item>
             <ListGroup.Item action href="#id=f">
-              Link 6
+              Duplicate Driving License
             </ListGroup.Item>
             <ListGroup.Item action href="#id=g">
-              Link 7
+              Endorsement of a License
             </ListGroup.Item>
             <ListGroup.Item action href="#id=h">
-              Link 8
+              Employee Registration
             </ListGroup.Item>
             <ListGroup.Item action href="#id=i">
-              Link 9
+              Tenants Registration
             </ListGroup.Item>
             <ListGroup.Item action href="#id=j">
-              Link 10
+              Vehicle Verification
+            </ListGroup.Item>
+            <ListGroup.Item action href="#id=k">
+              Loss Report
+            </ListGroup.Item>
+            <ListGroup.Item action href="#id=l">
+              Crime Reports
+            </ListGroup.Item>
+            <ListGroup.Item action href="#id=m">
+              Women Violence Report
+            </ListGroup.Item>
+            <ListGroup.Item action href="#id=n">
+              Copy of FIR
             </ListGroup.Item>
           </ListGroup>
         </Col>
@@ -58,8 +70,12 @@ export default function Services(props) {
             <Tab.Pane eventKey="#id=g">Tab 7</Tab.Pane>
             <Tab.Pane eventKey="#id=h">Tab 8</Tab.Pane>
             <Tab.Pane eventKey="#id=i">Tab 9</Tab.Pane>
-            <Tab.Pane {...props.changeProgress(100)} eventKey="#id=j">
-              Tab 10
+            <Tab.Pane eventKey="#id=j">Tab 10</Tab.Pane>
+            <Tab.Pane eventKey="#id=k">Tab 11</Tab.Pane>
+            <Tab.Pane eventKey="#id=l">Tab 12</Tab.Pane>
+            <Tab.Pane eventKey="#id=m">Tab 13</Tab.Pane>
+            <Tab.Pane {...props.changeProgress(100)} eventKey="#id=n">
+              Tab 14
             </Tab.Pane>
           </Tab.Content>
         </Col>
