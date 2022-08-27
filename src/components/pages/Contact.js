@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 import "../../styles/Contact.css";
 import contactus from "../UI/OtherImages/contactus.png"
+
 export default function Contact(props) {
   document.title = "PKM Punjab - Contact Us";
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_rjcl93l', 'template_iqufgls', form.current, '6_E-tnjKWsv0w476X')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
+
+
   return (
     <div
       {...props.changeProgress(10)}
@@ -26,7 +44,7 @@ export default function Contact(props) {
           />
         </div>
         <div className="column">
-          <form action="/action_page.php">
+          <form ref={form} onSubmit={sendEmail}>
             <label htmlFor="fname">First Name</label>
             <input
               type="text"
@@ -41,14 +59,14 @@ export default function Contact(props) {
               name="lastname"
               placeholder="Your last name.."
             />
-            <label htmlFor="fname">Email</label>
+            <label htmlFor="ename">Email</label>
             <input
               type="email"
               id="ename"
               name="email"
               placeholder="Your email.."
             />
-            <label htmlFor="fname">Contact No.</label>
+            <label htmlFor="cname">Contact No.</label>
             <input
               {...props.changeProgress(70)}
               type="tel"
@@ -57,15 +75,24 @@ export default function Contact(props) {
               placeholder="Your contact no.."
             />
             <label htmlFor="subject">Subject</label>
-            <textarea
+            <input
+              {...props.changeProgress(70)}
+              type="text"
               id="subject"
               name="subject"
+              placeholder="Your Subject..."
+            />
+          
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
               placeholder="Write something.."
               style={{ height: "170px" }}
             ></textarea>
             <input
               type="submit"
-              value="Submit"
+              value="Send"
               {...props.changeProgress(100)}
             />
           </form>
