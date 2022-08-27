@@ -12,7 +12,7 @@ export default function Footer() {
     <div>
       <footer style={{ backgroundColor: "#172b4d" }}>
         <FooterCard />
-        <div className="col-8" style={myStyle}>
+        <div style={myStyle}>
           <div
             className="text-center"
             style={{
