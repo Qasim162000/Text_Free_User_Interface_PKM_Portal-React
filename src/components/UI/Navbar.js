@@ -185,11 +185,6 @@ export default function Navbar(props) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="verify" className="nav-link">
-                  Verify
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link to="track" className="nav-link">
                   Track
                 </Link>
@@ -209,7 +204,6 @@ export default function Navbar(props) {
               >
                 اردو
               </button>
-              
             </ul>
           </div>
         </div>

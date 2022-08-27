@@ -9,9 +9,9 @@ import Services from "./components/pages/Services";
 import SignIn from "./components/pages/SignIn";
 import SignUp from "./components/pages/SignUp";
 import Track from "./components/pages/Track";
-import Verify from "./components/pages/Verify";
 import Contact from "./components/pages/Contact";
 import LoadingBar from "react-top-loading-bar";
+import PageNotFound from "./components/pages/Error404";
 
 export default function App() {
   useEffect(() => {
@@ -58,8 +58,8 @@ export default function App() {
             element={<Track changeProgress={changeProgress} />}
           />
           <Route
-            path="verify"
-            element={<Verify changeProgress={changeProgress} />}
+            path="*"
+            element={<PageNotFound changeProgress={changeProgress} />}
           />
         </Routes>
         <Footer />
