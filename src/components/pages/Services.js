@@ -10,7 +10,7 @@ import ServicesSlider from "../UI/ServicesSlider";
 export default function Services(props) {
   document.title = "PKM Punjab - Our Services";
   const myStyle = {
-    paddingTop: 70,
+    padding: "70px 0px",
     justifyContent: "center",
     margin: "auto",
   };
