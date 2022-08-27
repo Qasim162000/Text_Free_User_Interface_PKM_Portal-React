@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ServicesCardSlider(props) {
+export default function ServicesSlider(props) {
   return (
     <div
       id="carouselExampleIndicators"
