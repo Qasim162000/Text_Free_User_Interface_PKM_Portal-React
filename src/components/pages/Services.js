@@ -21,7 +21,7 @@ export default function Services(props) {
       defaultActiveKey={props.link}
     >
       <Row>
-        <Col sm={4}>
+        <Col sm={3}>
           <ListGroup>
             <ListGroup.Item action href="#id=a">
               Character Certificate
@@ -67,8 +67,8 @@ export default function Services(props) {
             </ListGroup.Item>
           </ListGroup>
         </Col>
-        <Col sm={8}>
-          <Tab.Content className="col-10" style={myStyle}>
+        <Col sm={9}>
+          <Tab.Content className="col-11" style={myStyle}>
             <Tab.Pane eventKey="#id=a">
               <ServicesSlider img1={testimg} img2={testimg} img3={testimg} />
               <ReactAudioPlayer className="mt-4" src={test} controls />
