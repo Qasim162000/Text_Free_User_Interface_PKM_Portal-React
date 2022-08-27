@@ -2,7 +2,7 @@ import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
-import Trial from "./Trial";
+import CenterCards from "../UI/CenterCards";
 
 function Centers(props) {
   document.title = "PKM Punjab - Our Centers";
@@ -132,7 +132,7 @@ function Centers(props) {
         <Col sm={8}>
           <Tab.Content>
             <Tab.Pane eventKey="#attock">
-              <Trial />
+              <CenterCards />
             </Tab.Pane>
             <Tab.Pane eventKey="#bahawalnagar">Meow</Tab.Pane>
             <Tab.Pane eventKey="#bahawalpur">Meow</Tab.Pane>

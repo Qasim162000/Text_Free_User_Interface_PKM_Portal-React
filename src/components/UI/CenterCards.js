@@ -1,7 +1,7 @@
 import React from "react";
-import "../../styles/Trial.css";
+import "../../styles/CenterCards.css";
 
-export default function Trial() {
+export default function CenterCards() {
   return (
     <>
       <section className="light">
