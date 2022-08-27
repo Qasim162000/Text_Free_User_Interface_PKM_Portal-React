@@ -23,7 +23,7 @@ export default function CenterCards() {
                 <a href="#!">Podcast Title</a>
               </h1>
               <div className="postcard__subtitle small">
-                <time datetime="2020-05-25 12:00:00">
+                <time dateTime="2020-05-25 12:00:00">
                   <i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
                 </time>
               </div>
@@ -65,7 +65,7 @@ export default function CenterCards() {
                 <a href="#!">Podcast Title</a>
               </h1>
               <div className="postcard__subtitle small">
-                <time datetime="2020-05-25 12:00:00">
+                <time dateTime="2020-05-25 12:00:00">
                   <i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
                 </time>
               </div>
@@ -107,7 +107,7 @@ export default function CenterCards() {
                 <a href="#!">Podcast Title</a>
               </h1>
               <div className="postcard__subtitle small">
-                <time datetime="2020-05-25 12:00:00">
+                <time dateTime="2020-05-25 12:00:00">
                   <i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
                 </time>
               </div>
@@ -149,7 +149,7 @@ export default function CenterCards() {
                 <a href="#!">Podcast Title</a>
               </h1>
               <div className="postcard__subtitle small">
-                <time datetime="2020-05-25 12:00:00">
+                <time dateTime="2020-05-25 12:00:00">
                   <i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
                 </time>
               </div>
@@ -200,7 +200,7 @@ export default function CenterCards() {
                 <a href="#!">Podcast Title</a>
               </h1>
               <div className="postcard__subtitle small">
-                <time datetime="2020-05-25 12:00:00">
+                <time dateTime="2020-05-25 12:00:00">
                   <i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
                 </time>
               </div>
@@ -242,7 +242,7 @@ export default function CenterCards() {
                 <a href="#!">Podcast Title</a>
               </h1>
               <div className="postcard__subtitle small">
-                <time datetime="2020-05-25 12:00:00">
+                <time dateTime="2020-05-25 12:00:00">
                   <i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
                 </time>
               </div>
@@ -284,7 +284,7 @@ export default function CenterCards() {
                 <a href="#!">Podcast Title</a>
               </h1>
               <div className="postcard__subtitle small">
-                <time datetime="2020-05-25 12:00:00">
+                <time dateTime="2020-05-25 12:00:00">
                   <i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
                 </time>
               </div>
@@ -326,7 +326,7 @@ export default function CenterCards() {
                 <a href="#!">Podcast Title</a>
               </h1>
               <div className="postcard__subtitle small">
-                <time datetime="2020-05-25 12:00:00">
+                <time dateTime="2020-05-25 12:00:00">
                   <i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
                 </time>
               </div>

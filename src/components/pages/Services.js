@@ -2,9 +2,17 @@ import Col from "react-bootstrap/Col";
 import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
+import ReactAudioPlayer from "react-audio-player";
+import test from "./test.mp3";
+import testimg from "../UI/SliderImages/bg1.jpg";
+import ServicesCardSlider from "../UI/ServicesCardSlider";
 
 export default function Services(props) {
   document.title = "PKM Punjab - Our Services";
+  const myStyle = {
+    paddingTop: 70,
+    margin: "auto",
+  };
   return (
     <Tab.Container
       {...props.changeProgress(20)}
@@ -60,23 +68,127 @@ export default function Services(props) {
         </Col>
         <Col sm={8}>
           <Tab.Content>
-            <Tab.Pane eventKey="#id=a">Tab 1</Tab.Pane>
-            <Tab.Pane eventKey="#id=b">Tab 2</Tab.Pane>
-            <Tab.Pane eventKey="#id=c">Tab 3</Tab.Pane>
-            <Tab.Pane {...props.changeProgress(70)} eventKey="#id=d">
-              Tab 4
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=a">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
             </Tab.Pane>
-            <Tab.Pane eventKey="#id=e">Tab 5</Tab.Pane>
-            <Tab.Pane eventKey="#id=f">Tab 6</Tab.Pane>
-            <Tab.Pane eventKey="#id=g">Tab 7</Tab.Pane>
-            <Tab.Pane eventKey="#id=h">Tab 8</Tab.Pane>
-            <Tab.Pane eventKey="#id=i">Tab 9</Tab.Pane>
-            <Tab.Pane eventKey="#id=j">Tab 10</Tab.Pane>
-            <Tab.Pane eventKey="#id=k">Tab 11</Tab.Pane>
-            <Tab.Pane eventKey="#id=l">Tab 12</Tab.Pane>
-            <Tab.Pane eventKey="#id=m">Tab 13</Tab.Pane>
-            <Tab.Pane {...props.changeProgress(100)} eventKey="#id=n">
-              Tab 14
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=b">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane
+              {...props.changeProgress(70)}
+              className="col-10"
+              style={myStyle}
+              eventKey="#id=c"
+            >
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=d">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=e">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=f">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=g">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=h">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=i">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=j">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=k">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=l">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=m">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer className="mt-4" src={test} controls />
+            </Tab.Pane>
+            <Tab.Pane className="col-10" style={myStyle} eventKey="#id=n">
+              <ServicesCardSlider
+                img1={testimg}
+                img2={testimg}
+                img3={testimg}
+              />
+              <ReactAudioPlayer
+                {...props.changeProgress(100)}
+                className="mt-4"
+                src={test}
+                controls
+              />
             </Tab.Pane>
           </Tab.Content>
         </Col>
