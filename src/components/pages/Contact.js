@@ -2,11 +2,15 @@ import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import "../../styles/Contact.css";
 import contactus from "../UI/OtherImages/contactus.png"
+
+import { useState, useEffect } from "react";
+
 export default function Contact(props) {
   document.title = "PKM Punjab - Contact Us";
 
-  const form = useRef();
 
+//// EMAIL SEND ////
+  const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
