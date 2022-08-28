@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import "../../styles/Contact.css";
 import contactus from "../UI/OtherImages/contactus.png"
-
 export default function Contact(props) {
   document.title = "PKM Punjab - Contact Us";
 
