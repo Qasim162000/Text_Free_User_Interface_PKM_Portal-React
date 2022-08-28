@@ -8,6 +8,7 @@ export default function SignIn(props) {
   const [message, setMessage] = useState("");
   const [error, setError] = useState(null);
   props.changeProgress(20);
+  
   function isValidEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
   }
@@ -39,6 +40,9 @@ export default function SignIn(props) {
       setErrorMessage("Is Not Strong Password");
     }
   };
+
+
+  
   props.changeProgress(40);
 
   return (
