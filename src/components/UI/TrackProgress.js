@@ -4,9 +4,9 @@ export default function TrackProgress() {
   return (
     <>
       <h1>Logic left</h1>
-      <div class="progress">
+      <div className="progress">
         <div
-          class="progress-bar"
+          className="progress-bar"
           role="progressbar"
           aria-label="Example with label"
           style={{ width: "25%" }}

@@ -3,6 +3,7 @@ import React from "react";
 import "../../styles/SignUp.css";
 import signup from "../UI/OtherImages/signup.png"
 
+
 export default function SignUp(props) {
   document.title = "PKM Punjab - Sign Up";
   return (
