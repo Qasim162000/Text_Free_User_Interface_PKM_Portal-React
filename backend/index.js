@@ -5,6 +5,8 @@ connectToMongo();
 const app = express();
 const port = 6000;
 
+app.use(express.json());
+
 //Available Routes
 app.use("/api/auth/", require("./routes/auth"));
 app.use("/api/form/", require("./routes/form"));
