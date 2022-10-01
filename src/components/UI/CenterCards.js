@@ -1,57 +1,48 @@
 import React from "react";
 import "../../styles/CenterCards.css";
-import attock from "..//UI//CenterCardsImages//attock.jpg"
+import attock from "..//UI//CenterCardsImages//attock.jpg";
 
-export default function CenterCards() {
-
-
-
+export default function CenterCards(props) {
   return (
     <>
       <section className="light">
         <div className="container py-2">
-          <div className="h1 text-center text-dark" id="pageHeaderTitle">
-
-          </div>
+          <div className="h1 text-center text-dark" id="pageHeaderTitle"></div>
 
           <article className="postcard light blue">
             <a className="postcard__img_link" href="centers#attock">
-              <img
-                className="postcard__img"
-                src={attock}
-                alt="Img Title"
-              />
+              <img className="postcard__img" src={attock} alt="Img Title" />
             </a>
             <div className="postcard__text t-dark">
               <h1 className="postcard__title blue">
-                <a href="centers#attock">Attock</a>
+                <a href="centers#attock">{props.name}</a>
               </h1>
               <div className="postcard__subtitle small">
                 <time dateTime="2020-05-25 12:00:00">
-                  <i className="fas fa-clock mr-2"></i>Monday - Saturday - 9am to 5pm
+                  <i className="fas fa-clock mr-2"></i>
+                  {props.time}
                 </time>
               </div>
               <div className="postcard__bar"></div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <a href="contact" target= "noblank">
-                  <i className="fa fa-envelope-o mr-2"></i>Email
+                  <a href="contact" target="noblank">
+                    <i className="fa fa-envelope-o mr-2"></i>Email
                   </a>
                 </li>
                 <li className="tag__item">
-                  <a href="tel:+92-57-9316440">
-                  <i className="fa fa-phone mr-2"></i>Phone
+                  <a href={props.phone}>
+                    <i className="fa fa-phone mr-2"></i>Phone
                   </a>
                 </li>
                 <li className="tag__item play blue">
-                  <a href="https://bit.ly/3KsJDYs" target= "noblank"> 
+                  <a href={props.location} target="noblank">
                     <i className="fa fa-location-arrow mr-2"></i>Location
                   </a>
                 </li>
               </ul>
             </div>
           </article>
-
         </div>
       </section>
       {/* DARK MODE */}

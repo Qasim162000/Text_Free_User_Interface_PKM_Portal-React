@@ -132,7 +132,12 @@ function Centers(props) {
         <Col sm={8}>
           <Tab.Content>
             <Tab.Pane eventKey="#attock">
-              <CenterCards />
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+              />
             </Tab.Pane>
             <Tab.Pane eventKey="#bahawalnagar">Meow</Tab.Pane>
             <Tab.Pane eventKey="#bahawalpur">Meow</Tab.Pane>
