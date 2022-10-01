@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/CenterCards.css";
-import attock from "..//UI//CenterCardsImages//attock.jpg";
+
 
 export default function CenterCards(props) {
   return (
@@ -10,12 +10,12 @@ export default function CenterCards(props) {
           <div className="h1 text-center text-dark" id="pageHeaderTitle"></div>
 
           <article className="postcard light blue">
-            <a className="postcard__img_link" href="centers#attock">
-              <img className="postcard__img" src={attock} alt="Img Title" />
+            <a className="postcard__img_link" href={props.center}>
+              <img className="postcard__img" src={props.image} alt="Img Title" />
             </a>
             <div className="postcard__text t-dark">
               <h1 className="postcard__title blue">
-                <a href="centers#attock">{props.name}</a>
+                <a href={props.center}>{props.name}</a>
               </h1>
               <div className="postcard__subtitle small">
                 <time dateTime="2020-05-25 12:00:00">

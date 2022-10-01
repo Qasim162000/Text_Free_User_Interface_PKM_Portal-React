@@ -3,6 +3,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
 import CenterCards from "../UI/CenterCards";
+import attock from "..//UI//CenterCardsImages//attock.jpg";
 
 function Centers(props) {
   document.title = "PKM Punjab - Our Centers";
@@ -137,6 +138,8 @@ function Centers(props) {
                 time={"Monday - Saturday - 9am to 5pm"}
                 location={"https://bit.ly/3KsJDYs"}
                 phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"centers#attock"}
               />
             </Tab.Pane>
             <Tab.Pane eventKey="#bahawalnagar">Meow</Tab.Pane>
