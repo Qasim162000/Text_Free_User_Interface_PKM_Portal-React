@@ -1,19 +1,19 @@
 const mongoose = require("mongoose");
 
-const FormSchema = new mongoose.Schema({
+const FormsSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "user",
   },
-  Subject: {
+  subject: {
     type: String,
     required: true,
   },
-  Message: {
+  message: {
     type: String,
     required: true,
   },
-  Progress: {
+  progress: {
     type: String,
     default: "Submitted",
   },
@@ -23,4 +23,4 @@ const FormSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("form", FormSchema);
+module.exports = mongoose.model("forms", FormsSchema);
