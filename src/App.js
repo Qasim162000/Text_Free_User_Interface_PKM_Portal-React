@@ -14,7 +14,7 @@ import Track from "./components/pages/Track";
 import Contact from "./components/pages/Contact";
 import LoadingBar from "react-top-loading-bar";
 import PageNotFound from "./components/pages/Error404";
-
+import FormState from "./context/forms/FormState";
 
 export default function App() {
   useEffect(() => {
@@ -31,42 +31,47 @@ export default function App() {
   };
   return (
     <div className="App">
-      <BrowserRouter>
-        <LoadingBar color="#f11946" progress={progress} />
-        <Navbar onClick={sendLink} />
-        <Routes>
-          <Route path="/" element={<Home changeProgress={changeProgress} />} />
-          <Route
-            path="services"
-            element={<Services changeProgress={changeProgress} link={link} />}
-          />
-          <Route
-            path="centers"
-            element={<Centers changeProgress={changeProgress} />}
-          />
-          <Route
-            path="contact"
-            element={<Contact changeProgress={changeProgress} />}
-          />
-          <Route
-            path="sign-in"
-            element={<SignIn changeProgress={changeProgress} />}
-          />
-          <Route
-            path="sign-up"
-            element={<SignUp changeProgress={changeProgress} />}
-          />
-          <Route
-            path="track"
-            element={<Track changeProgress={changeProgress} />}
-          />
-          <Route
-            path="*"
-            element={<PageNotFound changeProgress={changeProgress} />}
-          />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <FormState>
+        <BrowserRouter>
+          <LoadingBar color="#f11946" progress={progress} />
+          <Navbar onClick={sendLink} />
+          <Routes>
+            <Route
+              path="/"
+              element={<Home changeProgress={changeProgress} />}
+            />
+            <Route
+              path="services"
+              element={<Services changeProgress={changeProgress} link={link} />}
+            />
+            <Route
+              path="centers"
+              element={<Centers changeProgress={changeProgress} />}
+            />
+            <Route
+              path="contact"
+              element={<Contact changeProgress={changeProgress} />}
+            />
+            <Route
+              path="sign-in"
+              element={<SignIn changeProgress={changeProgress} />}
+            />
+            <Route
+              path="sign-up"
+              element={<SignUp changeProgress={changeProgress} />}
+            />
+            <Route
+              path="track"
+              element={<Track changeProgress={changeProgress} />}
+            />
+            <Route
+              path="*"
+              element={<PageNotFound changeProgress={changeProgress} />}
+            />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </FormState>
     </div>
   );
 }
