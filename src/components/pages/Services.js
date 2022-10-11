@@ -8,7 +8,6 @@ import testimg from "../UI/SliderImages/bg1.jpg";
 import ServicesSlider from "../UI/ServicesSlider";
 import formServices from "../UI/OtherImages/formServices.png";
 import slideshowServices from "../UI/OtherImages/slideshowServices.png";
-import { Link } from "react-router-dom";
 
 export default function Services(props) {
   document.title = "PKM Punjab - Our Services";
