@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/CenterCards.css";
-
+import { Link } from "react-router-dom";
 
 export default function CenterCards(props) {
   return (
@@ -10,12 +10,16 @@ export default function CenterCards(props) {
           <div className="h1 text-center text-dark" id="pageHeaderTitle"></div>
 
           <article className="postcard light blue">
-            <a className="postcard__img_link" href={props.center}>
-              <img className="postcard__img" src={props.image} alt="Img Title" />
-            </a>
+            <Link className="postcard__img_link" to={props.center}>
+              <img
+                className="postcard__img"
+                src={props.image}
+                alt="Img Title"
+              />
+            </Link>
             <div className="postcard__text t-dark">
               <h1 className="postcard__title blue">
-                <a href={props.center}>{props.name}</a>
+                <Link to={props.center}>{props.name}</Link>
               </h1>
               <div className="postcard__subtitle small">
                 <time dateTime="2020-05-25 12:00:00">
@@ -26,9 +30,9 @@ export default function CenterCards(props) {
               <div className="postcard__bar"></div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <a href="contact" target="noblank">
+                  <Link to="/contact" target="noblank">
                     <i className="fa fa-envelope-o mr-2"></i>Email
-                  </a>
+                  </Link>
                 </li>
                 <li className="tag__item">
                   <a href={props.phone}>

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/Error404.css";
+import { Link } from "react-router-dom";
 
 export default function Error404(props) {
   props.changeProgress(30);
@@ -14,16 +15,16 @@ export default function Error404(props) {
               Sorry, an error has occured, Requested page not found!
             </div>
             <div className="error-actions">
-              <a href="/" className="btn btn-primary btn-lg">
+              <Link to="/" className="btn btn-primary btn-lg">
                 Take Me Home
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="btn btn-outline-dark btn-lg"
                 {...props.changeProgress(100)}
               >
                 Contact Support
-              </a>
+              </Link>
             </div>
           </div>
         </div>

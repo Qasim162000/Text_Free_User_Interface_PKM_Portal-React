@@ -25,6 +25,7 @@ export default function App() {
   const [progress, setProgress] = useState(0);
   const sendLink = (event) => {
     setLink(event.target.href);
+    console.log(event);
   };
   const changeProgress = (progress) => {
     setProgress(progress);

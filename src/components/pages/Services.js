@@ -6,6 +6,9 @@ import ReactAudioPlayer from "react-audio-player";
 import test from "./test.mp3";
 import testimg from "../UI/SliderImages/bg1.jpg";
 import ServicesSlider from "../UI/ServicesSlider";
+import formServices from "../UI/OtherImages/formServices.png";
+import slideshowServices from "../UI/OtherImages/slideshowServices.png";
+import { Link } from "react-router-dom";
 
 export default function Services(props) {
   document.title = "PKM Punjab - Our Services";
@@ -122,13 +125,70 @@ export default function Services(props) {
               <ReactAudioPlayer className="mt-4" src={test} controls />
             </Tab.Pane>
             <Tab.Pane eventKey="#id=n">
-              <ServicesSlider img1={testimg} img2={testimg} img3={testimg} />
-              <ReactAudioPlayer
-                {...props.changeProgress(100)}
-                className="mt-4"
-                src={test}
-                controls
-              />
+              <div className="accordion d-flex" id="accordionExample">
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="headingOne">
+                    <button
+                      className="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <img src={formServices} width="10%" alt="Form logo" />
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    className="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      <ServicesSlider
+                        img1={testimg}
+                        img2={testimg}
+                        img3={testimg}
+                      />
+                      <ReactAudioPlayer
+                        {...props.changeProgress(100)}
+                        className="mt-4"
+                        src={test}
+                        controls
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="headingTwo">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <img
+                        src={slideshowServices}
+                        width="18%"
+                        alt="Slideshow logo"
+                      />
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      This is the second item's accordion body.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Tab.Pane>
           </Tab.Content>
         </Col>

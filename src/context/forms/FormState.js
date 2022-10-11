@@ -1,12 +1,13 @@
-import FormContext from "./FormContext";
+import formContext from "./formContext";
 
 const FormState = (props) => {
   const state = {
     name: "Qasim",
     class: "10b",
   };
+
   return (
-    <FormContext.Provider value={state}>{props.children}</FormContext.Provider>
+    <formContext.Provider value={state}>{props.children}</formContext.Provider>
   );
 };
 

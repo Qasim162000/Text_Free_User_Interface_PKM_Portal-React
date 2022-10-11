@@ -139,7 +139,7 @@ function Centers(props) {
                 location={"https://bit.ly/3KsJDYs"}
                 phone={"tel:+92-57-9316440"}
                 image={attock}
-                center={"centers#attock"}
+                center={"#attock"}
               />
             </Tab.Pane>
             <Tab.Pane eventKey="#bahawalnagar">Meow</Tab.Pane>

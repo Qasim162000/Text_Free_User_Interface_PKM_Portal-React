@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "./logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../../styles/Navbar.css";
 
 export default function Navbar(props) {
+  let location = useLocation();
   return (
     <div>
       <nav
@@ -31,7 +32,13 @@ export default function Navbar(props) {
           >
             <ul className="navbar-nav">
               <li className="nav-item ">
-                <Link to="/" className="nav-link active" aria-current="page">
+                <Link
+                  to="/"
+                  className={`nav-link ${
+                    location.pathname === "/" ? "active" : ""
+                  }`}
+                  aria-current="page"
+                >
                   Home
                 </Link>
               </li>
@@ -50,7 +57,7 @@ export default function Navbar(props) {
                     <Link
                       className="dropdown-item"
                       onClick={props.onClick}
-                      to={"/services#id=a"}
+                      to={"/services#a"}
                     >
                       Character Certificate
                     </Link>
@@ -175,35 +182,55 @@ export default function Navbar(props) {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link to="centers" className="nav-link">
+                <Link
+                  to="centers"
+                  className={`nav-link ${
+                    location.pathname === "/centers" ? "active" : ""
+                  }`}
+                >
                   Our Centers
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="contact" className="nav-link">
+                <Link
+                  to="contact"
+                  className={`nav-link ${
+                    location.pathname === "/contact" ? "active" : ""
+                  }`}
+                >
                   Contact
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="track" className="nav-link">
+                <Link
+                  to="track"
+                  className={`nav-link ${
+                    location.pathname === "/track" ? "active" : ""
+                  }`}
+                >
                   Track
                 </Link>
               </li>
-
-              <Link
+              <li>
+                <Link
+                  type="button"
+                  className={`btn btn-light mx-1 my-1 ${
+                    location.pathname === "/sign-in" ? "" : "active"
+                  }`}
+                  to="/sign-in"
+                >
+                  Sign In
+                </Link>
+              </li>
+              {/* Urdu Functionlity */}
+              {/* <button
                 type="button"
-                className="btn btn-light mx-1 my-1"
-                to="sign-in"
-              >
-                Sign In
-              </Link>
-
-              <button
-                type="button"
-                className="btn btn-outline-danger mx-1 my-1"
+                className={`btn btn-outline-danger mx-1 my-1 ${
+                  location.pathname === "/urdu" ? "active" : ""
+                }`}
               >
                 اردو
-              </button>
+              </button> */}
             </ul>
           </div>
         </div>
