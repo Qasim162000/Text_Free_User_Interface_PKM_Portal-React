@@ -23,7 +23,7 @@ export default function CenterCards(props) {
               </h1>
               <div className="postcard__subtitle small">
                 <time dateTime="2020-05-25 12:00:00">
-                  <i className="fas fa-clock mr-2"></i>
+                  <i className="fas fa-clock px-1"></i>
                   {props.time}
                 </time>
               </div>
@@ -31,17 +31,17 @@ export default function CenterCards(props) {
               <ul className="postcard__tagbox">
                 <li className="tag__item">
                   <Link to="/contact" target="noblank">
-                    <i className="fa fa-envelope-o mr-2"></i>Email
+                    <i className="fa fa-envelope-o mx-1 my-1"></i>Email
                   </Link>
                 </li>
                 <li className="tag__item">
                   <a href={props.phone}>
-                    <i className="fa fa-phone mr-2"></i>Phone
+                    <i className="fa fa-phone mx-1 my-1"></i>Phone
                   </a>
                 </li>
                 <li className="tag__item play blue">
                   <a href={props.location} target="noblank">
-                    <i className="fa fa-location-arrow mr-2"></i>Location
+                    <i className="fa fa-location-arrow mx-1 my-1"></i>Location
                   </a>
                 </li>
               </ul>

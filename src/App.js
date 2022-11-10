@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 
-import Footer from "./components/UI/Footer";
+// import Footer from "./components/UI/Footer";
 import Navbar from "./components/UI/Navbar";
 
 import Home from "./components/pages/Home";
@@ -14,7 +14,6 @@ import Track from "./components/pages/Track";
 import Contact from "./components/pages/Contact";
 import LoadingBar from "react-top-loading-bar";
 import PageNotFound from "./components/pages/Error404";
-import FormState from "./context/forms/FormState";
 
 export default function App() {
   useEffect(() => {
@@ -32,7 +31,7 @@ export default function App() {
   };
   return (
     <div className="App">
-      <FormState>
+      <>
         <BrowserRouter>
           <LoadingBar color="#f11946" progress={progress} />
           <Navbar onClick={sendLink} />
@@ -70,9 +69,9 @@ export default function App() {
               element={<PageNotFound changeProgress={changeProgress} />}
             />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
         </BrowserRouter>
-      </FormState>
+      </>
     </div>
   );
 }

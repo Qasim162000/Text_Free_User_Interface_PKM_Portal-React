@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import validator from "validator";
-import signin from "../UI/OtherImages/signin.png"
+import signin from "../UI/OtherImages/signin.png";
 
 export default function SignIn(props) {
   document.title = "PKM Punjab - Sign In";
   const [message, setMessage] = useState("");
   const [error, setError] = useState(null);
   props.changeProgress(20);
-  
+
   function isValidEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
   }
@@ -41,8 +41,6 @@ export default function SignIn(props) {
     }
   };
 
-
-  
   props.changeProgress(40);
 
   return (
@@ -62,15 +60,15 @@ export default function SignIn(props) {
                         Sign in
                       </p>
 
-                      <form className="mx-1 mx-md-4">
+                      <form className="mx-1 mx-md-4 mx-auto">
                         <div className="d-flex flex-row align-items-center mb-4">
-                          <i className="fas fa-envelope fa-lg me-3 pb-5 fa-fw"></i>
                           <div className="form-outline flex-fill mb-0">
+                            <i className="fa fa-envelope mx-2" />
                             <label
                               className="form-label pb-2"
                               htmlFor="form3Example3c"
                             >
-                              Your Email
+                              Email
                             </label>
 
                             <div>
@@ -87,9 +85,9 @@ export default function SignIn(props) {
                           </div>
                         </div>
 
-                        <div className="d-flex flex-row align-items-center mb-4">
-                          <i className="fas fa-lock fa-lg me-3 pb-5 mb-2 fa-fw"></i>
+                        <div className="d-flex flex-row align-items-center mb-4 mx-auto">
                           <div className="form-outline flex-fill mb-0">
+                            <i className="fa fa-lock mx-2" />
                             <label
                               className="form-label pb-2"
                               htmlFor="form3Example4c"
