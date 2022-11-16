@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 
-// import Footer from "./components/UI/Footer";
+import Footer from "./components/UI/Footer";
 import Navbar from "./components/UI/Navbar";
 
 import Home from "./components/pages/Home";
@@ -69,7 +69,7 @@ export default function App() {
               element={<PageNotFound changeProgress={changeProgress} />}
             />
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
         </BrowserRouter>
       </>
     </div>
