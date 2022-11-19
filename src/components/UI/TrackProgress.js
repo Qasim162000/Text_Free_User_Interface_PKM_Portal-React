@@ -3,7 +3,7 @@ import React from "react";
 export default function TrackProgress() {
   return (
     <>
-      <h1>Track Progress of a submiited Form for any service</h1>
+      <h1>Track Progress of a submitted Form for any service</h1>
       {/* Show the progress endpoint from the backend - simple (with some details for a pleasing look), nothing else */}
       <div className="progress">
         <div

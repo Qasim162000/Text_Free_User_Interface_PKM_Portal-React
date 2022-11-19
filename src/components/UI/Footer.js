@@ -10,7 +10,12 @@ export default function Footer() {
   };
   return (
     <div>
-      <footer style={{ backgroundColor: "#172b4d" }}>
+      <footer
+        className="footer navbar-fixed-bottom"
+        style={{
+          backgroundColor: "#172b4d",
+        }}
+      >
         <FooterCard />
         <div style={myStyle}>
           <div

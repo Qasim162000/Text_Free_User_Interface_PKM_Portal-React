@@ -124,24 +124,28 @@ export default function Services(props) {
               <ReactAudioPlayer className="mt-4" src={test} controls />
             </Tab.Pane>
             <Tab.Pane eventKey="#id=n">
-              <div className="accordion d-flex" id="accordionExample">
+              <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingOne">
+                  <h2 className="accordion-header" id="headingTwo">
                     <button
-                      className="accordion-button"
+                      className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
                     >
-                      <img src={formServices} width="10%" alt="Form logo" />
+                      <img
+                        src={slideshowServices}
+                        width="5%"
+                        alt="Slideshow logo"
+                      />
                     </button>
                   </h2>
                   <div
-                    id="collapseOne"
+                    id="collapseTwo"
                     className="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
+                    aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
@@ -160,30 +164,26 @@ export default function Services(props) {
                   </div>
                 </div>
                 <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingTwo">
+                  <h2 className="accordion-header" id="headingOne">
                     <button
-                      className="accordion-button collapsed"
+                      className="accordion-button"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
                     >
-                      <img
-                        src={slideshowServices}
-                        width="18%"
-                        alt="Slideshow logo"
-                      />
+                      <img src={formServices} width="5%" alt="Form logo" />
                     </button>
                   </h2>
                   <div
-                    id="collapseTwo"
+                    id="collapseOne"
                     className="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
+                    aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      This is the second item's accordion body.
+                      <strong>This is the first item's accordion body.</strong>
                     </div>
                   </div>
                 </div>
