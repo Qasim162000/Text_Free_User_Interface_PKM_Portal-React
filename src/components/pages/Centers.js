@@ -142,44 +142,355 @@ function Centers(props) {
                 center={"#attock"}
               />
             </Tab.Pane>
-            <Tab.Pane eventKey="#bahawalnagar">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#bahawalpur">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#bhakkar">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#chakwal">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#chiniot">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#dg-khan">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#faisalabad">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#gujranwala">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#gujrat">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#hafizabad">Meow</Tab.Pane>
-            <Tab.Pane {...props.changeProgress(80)} eventKey="#jhang">
-              Meow
+            <Tab.Pane eventKey="#bahawalnagar">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
             </Tab.Pane>
-            <Tab.Pane eventKey="#jhelum">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#kasur">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#khanewal">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#khushab">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#lahore">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#layyah">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#lodhran">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#mandi-bahauddin">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#mianwali">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#multan">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#muzzafargarh">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#nankana-sb">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#narowal">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#okara">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#pakpattan">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#rahim-yar-khan">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#rajanpur">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#rawalpindi">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#sahiwal">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#sargodha">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#sheikhupura">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#sialkot">Meow</Tab.Pane>
-            <Tab.Pane eventKey="#toba-tek-singh">Meow</Tab.Pane>
+            <Tab.Pane eventKey="#bahawalpur">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#bhakkar">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#chakwal">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#chiniot">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#dg-khan">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#faisalabad">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#gujranwala">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#gujrat">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#hafizabad">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane {...props.changeProgress(80)} eventKey="#jhang">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#jhelum">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#kasur">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#khanewal">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#khushab">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#lahore">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#layyah">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#lodhran">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#mandi-bahauddin">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#mianwali">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#multan">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#muzzafargarh">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#nankana-sb">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#narowal">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#okara">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#pakpattan">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#rahim-yar-khan">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#rajanpur">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#rawalpindi">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#sahiwal">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#sargodha">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#sheikhupura">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#sialkot">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
+            <Tab.Pane eventKey="#toba-tek-singh">
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
+            </Tab.Pane>
             <Tab.Pane {...props.changeProgress(100)} eventKey="#vehari">
-              Meow
+              <CenterCards
+                name={"Attock"}
+                time={"Monday - Saturday - 9am to 5pm"}
+                location={"https://bit.ly/3KsJDYs"}
+                phone={"tel:+92-57-9316440"}
+                image={attock}
+                center={"#attock"}
+              />
             </Tab.Pane>
           </Tab.Content>
         </Col>
