@@ -201,16 +201,7 @@ export default function Navbar(props) {
                   Contact
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link
-                  to="track"
-                  className={`nav-link ${
-                    location.pathname === "/track" ? "active" : ""
-                  }`}
-                >
-                  Track
-                </Link>
-              </li>
+
               <li>
                 <Link
                   type="button"

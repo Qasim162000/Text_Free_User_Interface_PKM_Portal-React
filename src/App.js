@@ -10,7 +10,6 @@ import Centers from "./components/pages/Centers";
 import Services from "./components/pages/Services";
 import SignIn from "./components/pages/SignIn";
 import SignUp from "./components/pages/SignUp";
-import Track from "./components/pages/Track";
 import Contact from "./components/pages/Contact";
 import LoadingBar from "react-top-loading-bar";
 import PageNotFound from "./components/pages/Error404";
@@ -60,10 +59,7 @@ export default function App() {
               path="sign-up"
               element={<SignUp changeProgress={changeProgress} />}
             />
-            <Route
-              path="track"
-              element={<Track changeProgress={changeProgress} />}
-            />
+
             <Route
               path="*"
               element={<PageNotFound changeProgress={changeProgress} />}
