@@ -12,5 +12,5 @@ app.use("/api/auth/", require("./routes/auth"));
 app.use("/api/form/", require("./routes/form"));
 
 app.listen(port, () => {
-  console.log(`Example app listening on port http://localhost:${port}`);
+  console.log(`Text Free PKM Portal Backend listening on port http://localhost:${port}`);
 });

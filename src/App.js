@@ -13,6 +13,9 @@ import SignUp from "./components/pages/SignUp";
 import Contact from "./components/pages/Contact";
 import LoadingBar from "react-top-loading-bar";
 import PageNotFound from "./components/pages/Error404";
+import FormState from "./context/forms/FormState";
+import MyForms from "./components/pages/MyForms";
+import Alert from "./components/UI/Alert";
 
 export default function App() {
   useEffect(() => {
@@ -30,10 +33,11 @@ export default function App() {
   };
   return (
     <div className="App">
-      <>
+      <FormState>
         <BrowserRouter>
           <LoadingBar color="#f11946" progress={progress} />
           <Navbar onClick={sendLink} />
+          <Alert message="Yet to be set" />
           <Routes>
             <Route
               path="/"
@@ -52,6 +56,10 @@ export default function App() {
               element={<Contact changeProgress={changeProgress} />}
             />
             <Route
+              path="myformsubmissions"
+              element={<MyForms changeProgress={changeProgress} />}
+            />
+            <Route
               path="sign-in"
               element={<SignIn changeProgress={changeProgress} />}
             />
@@ -67,7 +75,7 @@ export default function App() {
           </Routes>
           <Footer />
         </BrowserRouter>
-      </>
+      </FormState>
     </div>
   );
 }
