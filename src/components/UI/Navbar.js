@@ -34,7 +34,7 @@ export default function Navbar(props) {
               <li className="nav-item ">
                 <Link
                   to="/"
-                  className={`nav-link ${
+                  className={`nav-link my-1 ${
                     location.pathname === "/" ? "active" : ""
                   }`}
                   aria-current="page"
@@ -44,7 +44,7 @@ export default function Navbar(props) {
               </li>
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle my-1"
                   to={"/services"}
                   role="button"
                   data-bs-toggle="dropdown"
@@ -184,7 +184,7 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <Link
                   to="centers"
-                  className={`nav-link ${
+                  className={`nav-link my-1 ${
                     location.pathname === "/centers" ? "active" : ""
                   }`}
                 >
@@ -194,11 +194,21 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <Link
                   to="contact"
-                  className={`nav-link ${
+                  className={`nav-link my-1 ${
                     location.pathname === "/contact" ? "active" : ""
                   }`}
                 >
                   Contact
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="myforms"
+                  className={`nav-link my-1 ${
+                    location.pathname === "/myforms" ? "active" : ""
+                  }`}
+                >
+                  My Form Submissions
                 </Link>
               </li>
 

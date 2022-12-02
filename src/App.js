@@ -56,6 +56,10 @@ export default function App() {
               element={<Contact changeProgress={changeProgress} />}
             />
             <Route
+              path="myforms"
+              element={<MyForms changeProgress={changeProgress} />}
+            />
+            <Route
               path="myformsubmissions"
               element={<MyForms changeProgress={changeProgress} />}
             />

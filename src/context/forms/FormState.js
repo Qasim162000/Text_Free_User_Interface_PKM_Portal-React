@@ -77,6 +77,20 @@ const FormState = (props) => {
     },
   ];
 
+  //Add a Form
+  const addForm = (subject, message) => {
+    //TODO: API CALL
+    const form = {
+      _id: "6342439f676091615ee990ae8",
+      user: "632926b42e419b049afsfcdbe",
+      subject: subject,
+      message: message,
+      progress: "Submitted",
+      date: "2022-10-09T03:44:31.614Z",
+      __v: 0,
+    };
+    setForms(forms.concat(form));
+  };
   //Delete a Form
   const deleteForm = (id) => {};
   //Edit a Form
@@ -84,7 +98,9 @@ const FormState = (props) => {
 
   const [forms, setForms] = useState(formsInitial);
   return (
-    <formContext.Provider value={{ forms, setForms, deleteForm, editForm }}>
+    <formContext.Provider
+      value={{ forms, addForm, setForms, deleteForm, editForm }}
+    >
       {props.children}
     </formContext.Provider>
   );
