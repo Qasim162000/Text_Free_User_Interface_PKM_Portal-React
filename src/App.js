@@ -15,7 +15,7 @@ import LoadingBar from "react-top-loading-bar";
 import PageNotFound from "./components/pages/Error404";
 import FormState from "./context/forms/FormState";
 import MyForms from "./components/pages/MyForms";
-import Alert from "./components/UI/Alert";
+// import Alert from "./components/UI/Alert";
 
 export default function App() {
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function App() {
         <BrowserRouter>
           <LoadingBar color="#f11946" progress={progress} />
           <Navbar onClick={sendLink} />
-          <Alert message="Yet to be set" />
+          {/* <Alert message="Yet to be set" /> */}
           <Routes>
             <Route
               path="/"
